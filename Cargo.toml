@@ -1,0 +1,24 @@
+
+[package]
+name = "sol-escrow-rust"
+version = "0.0.1"
+description = "Solana escrow program written in Rust"
+license = "Apache-2.0"
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+borsh = "0.9.3"
+borsh-derive = "0.9.1"
+solana-program = "~1.8.14"
+thiserror = "1.0.24"
+
+
+[dev-dependencies]
+solana-program-test = "~1.8.14"
+solana-sdk = "~1.8.14"
+
+[lib]
+name = "helloworld"
+crate-type = ["cdylib", "lib"]
